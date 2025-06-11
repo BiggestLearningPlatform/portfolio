@@ -20,8 +20,15 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
   position: relative; /* For absolute positioning of dropdown on small screens */
+  flex-wrap: wrap;
 }
 
+header .navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Default desktop menu */
 header .navbar ul {
   list-style: none;
   display: flex;
@@ -30,11 +37,20 @@ header .navbar ul {
   padding: 0;
 }
 
+/* Navbar links */
 header .navbar a {
   color: white;
   text-decoration: none;
 }
 
+/* Hamburger icon - hidden by default */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Sections */
 section {
   padding: 2rem;
 }
@@ -85,13 +101,6 @@ section {
 }
 
 /* === Mobile Responsive Navbar === */
-.menu-icon {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Media Queries */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -102,10 +111,10 @@ section {
     flex-direction: column;
     background-color: #222;
     position: absolute;
-    top: 60px; /* adjust if header height is different */
+    top: 60px; /* adjust according to header height */
     left: 0;
     right: 0;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   header .navbar ul.open {
@@ -114,5 +123,6 @@ section {
 
   header .navbar ul li {
     margin: 0.5rem 0;
+    text-align: center;
   }
 }
