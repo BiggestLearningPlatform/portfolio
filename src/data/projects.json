@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Calculator",
-    "image": "https://via.placeholder.com/300x200?text=Calculator",
+    "image": "./images/calculator.png",
     "description": "A simple calculator web app built using HTML, CSS, and JavaScript.",
     "github": "https://github.com/BiggestLearningPlatform/Calculator",
     "live": "https://biggestlearningplatform.github.io/Calculator/"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "To-Do App",
-    "image": "https://via.placeholder.com/300x200?text=To-Do+App",
+    "image": "images/todo.png",
     "description": "A to-do list app built using HTML, CSS, and JavaScript.",
     "github": "https://github.com/BiggestLearningPlatform/todo-html-css-javascript",
     "live": "https://biggestlearningplatform.github.io/todo-html-css-javascript/"

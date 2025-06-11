@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #222;
+  background-color: #1ac2ec;
   color: white;
   padding: 1rem;
   position: sticky;
@@ -56,10 +56,16 @@ section {
 }
 
 .hero {
-  background: linear-gradient(45deg, #6b0f1a, #b91372);
+  background: linear-gradient(45deg, #0bf0ab, #2c13b9);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
+}
+.hero a{
+  color: black;
+  text-decoration: none;
+  font-weight: 1000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .skills ul {
