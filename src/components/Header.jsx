@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header>
       <nav className="navbar">
         <h1>Bilal's Portfolio</h1>
-        <ul>
+        <div className="menu-icon" onClick={toggleMenu}>
+          &#9776; {/* Hamburger icon */}
+        </div>
+        <ul className={menuOpen ? 'open' : ''}>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>

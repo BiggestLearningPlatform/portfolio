@@ -5,27 +5,29 @@ body {
   color: #333;
 }
 
-/* Updated Navbar CSS */
 header {
   background-color: #222;
   color: white;
   padding: 1rem;
-  position: sticky;   /* Make it sticky */
-  top: 0;             /* Stick to the top */
-  z-index: 999;       /* Stay above other content */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Slight shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* For absolute positioning of dropdown on small screens */
 }
 
 header .navbar ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 header .navbar a {
@@ -80,4 +82,37 @@ section {
 
 .project-card .links a {
   color: #007BFF;
+}
+
+/* === Mobile Responsive Navbar === */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  header .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 60px; /* adjust if header height is different */
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  header .navbar ul.open {
+    display: flex;
+  }
+
+  header .navbar ul li {
+    margin: 0.5rem 0;
+  }
 }
