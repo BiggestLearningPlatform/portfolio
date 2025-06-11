@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Updated Navbar CSS */
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  position: sticky;   /* Make it sticky */
+  top: 0;             /* Stick to the top */
+  z-index: 999;       /* Stay above other content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Slight shadow for depth */
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+.hero {
+  background: linear-gradient(45deg, #6b0f1a, #b91372);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card .links a {
+  color: #007BFF;
+}

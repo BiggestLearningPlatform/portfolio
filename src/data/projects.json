@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Inventory Management System",
+    "image": "/images/project1.png",
+    "description": "A Java Spring Boot API integrated with React frontend.",
+    "github": "https://github.com/bilal/inventory-app",
+    "live": "https://bilal.github.io/inventory-app/"
+  },
+  {
+    "id": 2,
+    "title": "Personal Blog Platform",
+    "image": "/images/project2.png",
+    "description": "A dynamic blog built with React and RESTful APIs.",
+    "github": "https://github.com/bilal/blog-app",
+    "live": "https://bilal.github.io/blog-app/"
+  }
+]
